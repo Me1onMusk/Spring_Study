@@ -2,12 +2,16 @@ package com.example.register.service;
 
 import com.example.register.domain.Member;
 import com.example.register.repository.MemberRepository;
-import com.example.register.repository.MemoryMemberRepository;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 import java.util.Optional;
 
-// 서비스 //
+// Service <- Repository (DI 주입)
+// 1.생성자 주입
+// 2.필드 주입
+// 3.setter 주입
+//@Service
 public class MemberService {
 
 //    private final MemberRepository memberRepository = new MemoryMemberRepository();
